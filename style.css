@@ -1,0 +1,22 @@
+.section1 {
+    background-color: #1f2937;
+    color: white;
+}
+
+ .section1 h1 {
+    font-size: 48px;
+}
+
+.section1 h2 {
+    font-size: 24px #f9fAf8;
+}
+
+.section1 p,
+.section1 ul{
+    font-size: 18px #e5e7eb;
+}
+
+button {
+    background-color: lightseagreen;
+    color: white;
+}
