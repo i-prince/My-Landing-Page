@@ -45,4 +45,28 @@ a {
     text-decoration: none;
 }
 
+.sec1 {
+    border: 2px solid red;
+    width: 50%;
+}
 
+.part1 {
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 100px;
+    margin-left: 100px;
+    gap: 20px;
+}
+
+img {
+    height: 350px;
+}
+
+button {
+    background-color: #3882f6;
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
