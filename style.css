@@ -1,3 +1,7 @@
+body {
+    width:fit-content;
+}
+
 .section1 {
     background-color: #1f2937;
     color: white;
@@ -85,8 +89,21 @@ button {
 .pixa {
     display: flex;
     border: 2px solid red;
+    justify-content: space-between;
+    gap: 20px;
 }
 
-.pixa p{
+.pixa div {
     flex: 1;
+    border: 2px solid red;
+    text-align: center;
+
+}
+
+.section3 {
+    background-color: #efe7eb;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: lighter;
+    padding: 50px;
 }
