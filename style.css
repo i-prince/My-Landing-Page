@@ -76,7 +76,7 @@ button {
     text-align: center;
 }
 
-.pixa {
+.pixa { /*flex container*/
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -84,7 +84,7 @@ button {
     padding-right: 40px;
 }
 
-.pixa div {
+.pixa div { /*flex item*/
     flex: 1;
     text-align: center;
 
