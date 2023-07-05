@@ -1,5 +1,5 @@
 body {
-    width:fit-content;
+    width: fit-content;
 }
 
 .section1 {
@@ -8,23 +8,24 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
- .section1 h1 {
+.section1 h1 {
     font-size: 48px;
 }
 
 .section1 h2 {
     font-size: 24px;
-    margin: 0%;
+    margin: 0;
 }
 
 .section1 p,
-.section1 ul{
-    font-size: 18px #e5e7eb;
+.section1 ul {
+    font-size: 18px;
+    color: #e5e7eb;
 }
 
 .header {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 8px;
 }
 
@@ -46,10 +47,7 @@ a {
 
 .part1 {
     display: flex;
-    margin-top: 80px;
-    margin-bottom: 80px;
-    margin-right: 100px;
-    margin-left: 100px;
+    margin: 80px 100px;
     gap: 20px;
 }
 
@@ -70,6 +68,7 @@ button {
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .section2 > * {
     flex-basis: 100%;
 }
@@ -80,18 +79,16 @@ button {
     text-align: center;
 }
 
-.pixa { /*flex container*/
+.pixa {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 0 40px;
 }
 
-.pixa div { /*flex item*/
+.pixa div {
     flex: 1;
     text-align: center;
-
 }
 
 .section3 {
