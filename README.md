@@ -31,6 +31,7 @@ The project is built using the following technologies:
 
 - HTML5: Provides the structure and content of the web page.
 - CSS: Adds styling and visual enhancements to the page.
+- Bootstrap: A frontend CSS framework
 
 ## Contributing
 
