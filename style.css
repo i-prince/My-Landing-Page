@@ -4,16 +4,21 @@ body {
 }
 */
 
+/*
 .section1 {
     background-color: #1f2937;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+*/
 
+/*
 .section1 h1 {
     font-size: 48px;
 }
+*/
 
+/*
 .section1 h2 {
     font-size: 24px;
     margin: 0;
@@ -24,40 +29,46 @@ body {
     font-size: 18px;
     color: #e5e7eb;
 }
+*/
 
-.header {
+/*.header {
     display: flex;
     justify-content: space-between;
     padding: 8px;
 }
+*/
 
-.section1 ul {
+/*.section1 ul {
     display: flex;
     gap: 20px;
     list-style: none;
     margin-right: 120px;
 }
+*/
 
-a {
+/*a {
     color: white;
     text-decoration: none;
 }
+*/
 
-.sec1 {
+/*.sec1 {
     width: 50%;
 }
+*/
 
-.part1 {
+/*.part1 {
     display: flex;
     margin: 80px 100px;
     gap: 20px;
 }
+*/
 
-img {
+/*img {
     height: 350px;
 }
-
-button {
+*/
+/*button {
     background-color: #3882f6;
     border: none;
     border-radius: 5px;
@@ -65,6 +76,7 @@ button {
     height: 30px;
     color: white;
 }
+*/
 
 .section2 {
     display: flex;
