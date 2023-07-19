@@ -136,14 +136,17 @@ body {
     margin-top: 33px;
 }
 */
-@media (min-width: 768px) {
-    .news-input {
-        width: 50%;
-    }
-}
+/*
 footer {
     background-color: #1f2937;
     color: white;
     padding: 25px;
     text-align: center;
 }
+*/
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
+
