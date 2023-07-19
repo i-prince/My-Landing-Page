@@ -120,13 +120,8 @@ body {
     padding: 50px;
 }
 */
-body {
-    background-image: url('your-image-url.jpg');
-    background-size: cover; /* Adjust the size of the background image to cover the entire body */
-    background-position: center center; /* Center the background image horizontally and vertically */
-    background-repeat: no-repeat; /* Prevent the background image from repeating */
-  }
 
+/*
 .section4 {
     display: flex;
     background-color: #3882f6;
@@ -140,7 +135,12 @@ body {
     border: 2px solid white;
     margin-top: 33px;
 }
-
+*/
+@media (min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
 footer {
     background-color: #1f2937;
     color: white;
