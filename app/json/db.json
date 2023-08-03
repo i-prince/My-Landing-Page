@@ -1,0 +1,42 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john@example.com",
+            "password": "hashed_password_here"
+          },
+          {
+            "id": 2,
+            "name": "Jane Smith",
+            "email": "jane@example.com",
+            "password": "hashed_password_here"
+          }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "userName": "John Doe",
+            "commentText": "Exciting times for Chelsea FC!",
+            "timestamp": "2023-08-01T12:34:56Z"
+          },
+          {
+            "id": 2,
+            "userName": "Jane Smith",
+            "commentText": "Looking forward to the next match!",
+            "timestamp": "2023-08-02T15:45:00Z"
+          }
+    ],
+    "newsletterSubscribers": [
+        {
+            "id": 1,
+            "userName": "john_doe_twitter",
+            "twitterProfile": "https://twitter.com/john_doe_twitter"
+          },
+          {
+            "id": 2,
+            "userName": "jane_smith_twitter",
+            "twitterProfile": "https://twitter.com/jane_smith_twitter"
+          }
+    ]
+  }
