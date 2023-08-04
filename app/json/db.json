@@ -1,26 +1,26 @@
 {
   "top_scorer": {
-    "name": "E. Hazard",
+    "name": "N. Jackson",
     "goals": 22,
     "assists": 10,
-    "image": "https://example.com/images/hazard.jpg"
+    "image": "https://img.chelseafc.com/image/upload/f_auto,h_860,q_50/editorial/people/first-team/2023-24/Jackson_profile_avatar_23-24-removebg.png"
   },
   "top_assister": {
-    "name": "C. Pulisic",
+    "name": "C. Nkunku",
     "assists": 15,
     "goals": 8,
-    "image": "https://example.com/images/pulisic.jpg"
+    "image": "https://img.chelseafc.com/image/upload/f_auto,h_860,q_50/editorial/people/first-team/2023-24/Nkunku_profile_avatar_23-24-removebg.png"
   },
   "top_goalkeeper": {
-    "name": "T. Courtois",
+    "name": "K. Arrizabalaga",
     "clean_sheets": 18,
     "goals_conceded": 25,
-    "image": "https://example.com/images/courtois.jpg"
+    "image": "https://img.chelseafc.com/image/upload/f_auto,h_860,q_50/editorial/people/first-team/2023-24/Avatar_3333x5000_Arrizabalaga.png"
   },
   "promising_talent": {
-    "name": "M. Mount",
+    "name": "I. Maatsen",
     "position": "Midfielder",
-    "age": 22,
-    "image": "https://example.com/images/mount.jpg"
+    "age": 20,
+    "image": "https://img.chelseafc.com/image/upload/f_auto,h_860,q_50/editorial/people/academy/2023-24/Maatsen_profile_avatar_23-24-removebg.png"
   }
 }
