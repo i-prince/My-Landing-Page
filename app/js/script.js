@@ -7,6 +7,7 @@ fetch('http://localhost:3000/top_scorer')
     const topScorerText = document.getElementById('topScorerText');
 
     topScorerImage.src = topScorerData.image; // Rendering the image to the webpage
+    topScorerText.textContent = `${topScorerData.name} has scored ${topScorerData.goals} goals and provided ${topScorerData.assists} assists.`; // rendering the text content to the webpage 
 })
 .catch((topScorerError) => alert('invalid request'))
 
@@ -18,6 +19,7 @@ fetch('http://localhost:3000/top_assister')
     const topAssisterText = document.getElementById('topAssisterText');
 
     topAssisterImage.src = topAssisterData.image;
+    topAssisterText.textContent = `${topAssisterData.name} has scored ${topAssisterData.goals} and provided ${topAssisterData.assists} assists`
 })
 .catch((topAssisterError) => alert('invalid request'))
 
@@ -29,6 +31,7 @@ fetch('http://localhost:3000/top_goalkeeper')
     const topGoalkeeperText = document.getElementById('topGoalkeeperText');
 
     topGoalkeeperImage.src = topGoalkeeperData.image;
+    topGoalkeeperText.textContent = `${topGoalkeeperData.name} has produced ${topGoalkeeperData.clean_sheets} clean sheets and conceded ${topGoalkeeperData.goals_conceded} goals only`
 })
 .catch((topGoalkeeperError) => alert('invalid request'))
 
@@ -40,5 +43,6 @@ fetch('http://localhost:3000/promising_talent')
     const promisingTalentText = document.getElementById('promisingTalentText');
 
     promisingTalentImage.src = promisingTalentData.image;
+    promisingTalentText.textContent = `${promisingTalentData.name} is a ${promisingTalentData.position} and is ${promisingTalentData.age} years old`
 })
 .catch((promisingTalentError) => alert('invalid request'))
