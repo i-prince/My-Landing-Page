@@ -32,6 +32,9 @@ The project is built using the following technologies:
 - HTML5: Provides the structure and content of the web page.
 - CSS: Adds styling and visual enhancements to the page.
 - Bootstrap: A frontend CSS framework
+- Javascript: To interact with the user
+- JSON: To store user data and to retrieve data required by the user while on the page
+- Heroku: To host the website and the JSON
 
 ## Contributing
 
