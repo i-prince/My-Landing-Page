@@ -48,31 +48,42 @@ fetch('http://localhost:3000/promising_talent')
 .catch((promisingTalentError) => alert('invalid request'))
 
 // Signing up for an account
-document.getElementById("myForm").addEventListener("submit", function(event) {
-    event.preventDefault();
+    document.getElementById("myForm").addEventListener("submit", function(event) {
+        event.preventDefault();
 
-    const email = document.getElementById("email").value;
-    const name = document.getElementById("name").value;
-    const password = document.getElementById("password").value;
+        const email = document.getElementById("email").value;
+        const name = document.getElementById("name").value;
+        const password = document.getElementById("password").value;
 
-    const userData = {
-        email: email,
-        name: name,
-        password: password
-    };
+        const userData = {
+            email: email,
+            name: name,
+            password: password
+        };
 
-    // Sending the retrieved data to my json
-    fetch('http://localhost:3000/new_user', {
-        method: 'POST',
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify(userData)
-    })
-    .then((newUserResource) => newUserResource.json())
-    .then((newUserData) => console.log(newUserData))
-    .catch((newUserError) => console.log("Invalid Request"));
-});
+        // Sending the retrieved data to my JSON using POST
+        fetch('http://localhost:3000/new_user', {
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(userData)
+        })
+        .then((newUserResource) => newUserResource.json())
+        .then((newUserData) => {
+            // Display success alert
+            document.getElementById("successAlert").style.display = "block";
+
+            // Hide the alert after a delay (e.g., 6 seconds)
+            setTimeout(() => {
+                document.getElementById("successAlert").style.display = "none";
+            }, 6000); // Adjust the time delay as needed
+        })
+        .catch((newUserError) => console.log("Invalid Request"));
+    });
+
+
+
 
 
 
