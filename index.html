@@ -49,7 +49,6 @@
                          Carlo Ancelotti, and Frank Lampard. The club has 
                          a large and dedicated fanbase.
                     </p>
-                    <button class="btn btn-primary btn-lg mb-sm-4">SIGN UP</button>
                 </div>
                 <img class="img-fluid w-lg-50" src="./assets/images/Champions.jpg" alt="Chelsea FC Champions">
             </div>
@@ -65,37 +64,37 @@
                   <img id="topScorerImage" alt="Top Scorer Image" class="card-img-top w-50 img-fluid">
                   <div class="card-body">
                     <h5 class="card-title">TOP SCORER</h5>
-                    <p id="topScorerText" class="card-text"></p>
+                    <p id="topScorerText" class="card-text fw-semibold"></p>
                   </div>
                   <div class="card-footer">
                     <small class="text-body-secondary fw-bold">2022-23 Season</small>
                   </div>
                 </div>
                 <div class="card bg-dark-subtle">
-                    <img id="topAssisterImage" alt="HTML5 Logo" class="card-img-top w-50 img-fluid">
+                    <img id="topAssisterImage" alt="Top Assister Image" class="card-img-top w-50 img-fluid">
                   <div class="card-body">
                     <h5 class="card-title">TOP ASSISTER</h5>
-                    <p id="topAssisterText" class="card-text"></p>
+                    <p id="topAssisterText" class="card-text fw-semibold"></p>
                   </div>
                   <div class="card-footer">
                     <small class="text-body-secondary fw-bold">2022-23 Season</small>
                   </div>
                 </div>
                 <div class="card bg-primary-subtle">
-                    <img id="topGoalkeeperImage" alt="HTML5 Logo" class="card-img-top w-50 img-fluid">
+                    <img id="topGoalkeeperImage" alt="Top Goalkeeper Image" class="card-img-top w-50 img-fluid">
                   <div class="card-body">
                     <h5 class="card-title">TOP GOAL KEEPER</h5>
-                    <p id="topGoalkeeperText" class="card-text"></p>
+                    <p id="topGoalkeeperText" class="card-text fw-semibold"></p>
                   </div>
                   <div class="card-footer">
                     <small class="text-body-secondary fw-bold">2022-23 Season</small>
                   </div>
                 </div>
                 <div class="card bg-dark-subtle">
-                    <img id="promisingTalentImage" alt="HTML5 Logo" class="card-img-top w-50 img-fluid">
+                    <img id="promisingTalentImage" alt="Promising Talent Image" class="card-img-top w-50 img-fluid">
                     <div class="card-body">
                       <h5 class="card-title">PROMISING TALENT</h5>
-                      <p id="promisingTalentText" class="card-text"></p>
+                      <p id="promisingTalentText" class="card-text fw-semibold"></p>
                     </div>
                     <div class="card-footer">
                       <small class="text-body-secondary fw-bold">2022-23 Season</small>
@@ -169,11 +168,24 @@
     <section class="p-5 bg-primary text-light">
         <div class="container d-md-flex align-items-center justify-content-between">
           <h3 class="mb-3 mb-md-0">Sign up for Our Newsletter</h3>
-
-          <div class="input-group news-input">
-            <input type="text" class="form-control" placeholder="Enter Email" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-dark btn-lg" type="button" >Button</button>
-          </div>
+            
+            <div id="signupForm" class="mt-3">
+                <form id="myForm">
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <input type="password" class="form-control" id="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Submit</button>
+                </form>
+            </div>
         </div>
         
     </section>

@@ -46,3 +46,33 @@ fetch('http://localhost:3000/promising_talent')
     promisingTalentText.textContent = `${promisingTalentData.name} is a ${promisingTalentData.position} and is ${promisingTalentData.age} years old`
 })
 .catch((promisingTalentError) => alert('invalid request'))
+
+// Signing up for an account
+document.getElementById("myForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const password = document.getElementById("password").value;
+
+    const userData = {
+        email: email,
+        name: name,
+        password: password
+    };
+
+    // Sending the retrieved data to my json
+    fetch('http://localhost:3000/new_user', {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(userData)
+    })
+    .then((newUserResource) => newUserResource.json())
+    .then((newUserData) => console.log(newUserData))
+    .catch((newUserError) => console.log("Invalid Request"));
+});
+
+
+
