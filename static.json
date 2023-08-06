@@ -1,0 +1,6 @@
+{
+    "root": "app",
+    "routes": {
+      "/**": "index.html"
+    }
+  }
