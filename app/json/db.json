@@ -22,5 +22,10 @@
     "position": "Midfielder",
     "age": 20,
     "image": "https://img.chelseafc.com/image/upload/f_auto,h_860,q_50/editorial/people/academy/2023-24/Maatsen_profile_avatar_23-24-removebg.png"
+  },
+  "new_user": {
+    "email": "molatonny@gmail.com",
+    "name": "Brother Mola",
+    "password": "huli"
   }
 }
