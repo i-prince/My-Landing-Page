@@ -62,6 +62,8 @@ fetch('http://localhost:3000/promising_talent')
         };
 
         // Sending the retrieved data to my JSON using POST
+        const signUpForm = document.getElementById("signUpForm");
+
         fetch('http://localhost:3000/new_user', {
             method: 'POST',
             headers: {
@@ -74,11 +76,14 @@ fetch('http://localhost:3000/promising_talent')
             // Display success alert
             document.getElementById("successAlert").style.display = "block";
 
-            // Hide the alert after a delay (e.g., 6 seconds)
+            // Hide the alert after a delay (e.g., 5 seconds)
             setTimeout(() => {
                 document.getElementById("successAlert").style.display = "none";
-            }, 6000); // Adjust the time delay as needed
+            }, 5000); // Adjust the time delay as needed
+
+            signUpForm.reset();
         })
+
         .catch((newUserError) => console.log("Invalid Request"));
     });
 
