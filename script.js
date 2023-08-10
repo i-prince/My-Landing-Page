@@ -1,8 +1,8 @@
 // Fetching the player stats data on page load
 // Top scorer data
-const baseUrl = 'https://spectacular-lebkuchen-7b3879.netlify.app'; // Remove trailing slash from URL
+const baseUrl = 'https://spectacular-lebkuchen-7b3879.netlify.app'; 
 
-fetch(`${baseUrl}/top_scorer`) // Use the backticks (``) for string interpolation
+fetch(`${baseUrl}/.netlify/functions/fetch-top-scorer`)
 .then((topScorerResource) => topScorerResource.json())
 .then((topScorerData) => {
     const topScorerImage = document.getElementById('topScorerImage');
@@ -11,43 +11,43 @@ fetch(`${baseUrl}/top_scorer`) // Use the backticks (``) for string interpolatio
     topScorerImage.src = topScorerData.image;
     topScorerText.textContent = `${topScorerData.name} has scored ${topScorerData.goals} goals and provided ${topScorerData.assists} assists.`;
 })
-.catch((topScorerError) => alert('Invalid request'));
+.catch((topScorerError) => console.error('Error fetching top scorer data:', topScorerError));
 
 // Top assister data
-fetch(`${baseUrl}/top_assister`)
+fetch(`${baseUrl}/.netlify/functions/fetch-top-assister`)
 .then((topAssisterResource) => topAssisterResource.json())
 .then((topAssisterData) => {
     const topAssisterImage = document.getElementById('topAssisterImage');
     const topAssisterText = document.getElementById('topAssisterText');
 
     topAssisterImage.src = topAssisterData.image;
-    topAssisterText.textContent = `${topAssisterData.name} has scored ${topAssisterData.goals} and provided ${topAssisterData.assists} assists`;
+    topAssisterText.textContent = `${topAssisterData.name} has scored ${topAssisterData.goals} and provided ${topAssisterData.assists} assists.`;
 })
-.catch((topAssisterError) => alert('Invalid request'));
+.catch((topAssisterError) => console.error('Error fetching top assister data:', topAssisterError));
 
 // Top goalkeeper data
-fetch(`${baseUrl}/top_goalkeeper`)
+fetch(`${baseUrl}/.netlify/functions/fetch-top-goalkeeper`)
 .then((topGoalkeeperResource) => topGoalkeeperResource.json())
 .then((topGoalkeeperData) => {
     const topGoalkeeperImage = document.getElementById('topGoalkeeperImage');
     const topGoalkeeperText = document.getElementById('topGoalkeeperText');
 
     topGoalkeeperImage.src = topGoalkeeperData.image;
-    topGoalkeeperText.textContent = `${topGoalkeeperData.name} has produced ${topGoalkeeperData.clean_sheets} clean sheets and conceded ${topGoalkeeperData.goals_conceded} goals only`;
+    topGoalkeeperText.textContent = `${topGoalkeeperData.name} has produced ${topGoalkeeperData.clean_sheets} clean sheets and conceded ${topGoalkeeperData.goals_conceded} goals only.`;
 })
-.catch((topGoalkeeperError) => alert('Invalid request'));
+.catch((topGoalkeeperError) => console.error('Error fetching top goalkeeper data:', topGoalkeeperError));
 
 // Promising talent data
-fetch(`${baseUrl}/promising_talent`)
+fetch(`${baseUrl}/.netlify/functions/fetch-top-promising-talent`)
 .then((promisingTalentResource) => promisingTalentResource.json())
 .then((promisingTalentData) => {
     const promisingTalentImage = document.getElementById('promisingTalentImage');
     const promisingTalentText = document.getElementById('promisingTalentText');
 
     promisingTalentImage.src = promisingTalentData.image;
-    promisingTalentText.textContent = `${promisingTalentData.name} is a ${promisingTalentData.position} and is ${promisingTalentData.age} years old`;
+    promisingTalentText.textContent = `${promisingTalentData.name} is a ${promisingTalentData.position} and is ${promisingTalentData.age} years old.`;
 })
-.catch((promisingTalentError) => alert('Invalid request'));
+.catch((promisingTalentError) => console.error('Error fetching promising talent data:', promisingTalentError));
 
 // Signing up for an account
 document.getElementById("myForm").addEventListener("submit", function(event) {
@@ -85,5 +85,5 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
 
         signUpForm.reset();
     })
-    .catch((newUserError) => console.log("Invalid Request"));
+    .catch((newUserError) => console.error('Error signing up:', newUserError));
 });
