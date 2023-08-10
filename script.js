@@ -1,6 +1,9 @@
 // Fetching the player stats data on page load
 // Top scorer data
-fetch('http://localhost:3000/top_scorer')
+const baseUrl = 'https://github.com/i-prince/My-Landing-Page/blob/main/db.json'; // Replace with your actual backend URL
+
+
+fetch('${baseUrl}/top_scorer')
 .then((topScorerResource) => topScorerResource.json())
 .then((topScorerData) => {
     const topScorerImage = document.getElementById('topScorerImage');
